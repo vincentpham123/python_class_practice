@@ -10,10 +10,8 @@ class PartyAnimal:
     def __del__(self):
         print('party is done')
 
-instance_party = PartyAnimal(100)
-instance_party.party()
-instance_party.party()
-instance_party.party()
-instance_party.party()
-instance_party.__del__()
-instance_party.party()
+if __name__ == "__main__":
+    # This block will only execute if the script is run directly, not when imported
+    test = PartyAnimal(10)
+    test.party()
+
